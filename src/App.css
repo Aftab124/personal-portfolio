@@ -14,6 +14,16 @@
 	src: url('./assets/font/CentraNo2-Book.ttf');
 	font-weight: 400;
 }
+.project-img-container {
+  width: 100%;
+  max-width: 400px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.project-img-container img {
+  width: 100%;
+  height: auto;
+}
 
 /************ Default Css ************/
 * {
