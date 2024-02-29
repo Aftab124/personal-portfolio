@@ -44,12 +44,12 @@ export const Projects = () => {
   return (
     <section className="project" id="projects">
       <Container>
-        <Row className="justify-content-center align-items-center">
-          <Col size={12} className="text-center">
+        <Row>
+          <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) => (
                 <div className={isVisible ? 'animate__animated animate__fadeIn' : ''}>
-                  <h2 className="mb-5">Projects</h2>
+                  <h2>Projects</h2>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                       <Nav.Item>
@@ -67,46 +67,30 @@ export const Projects = () => {
                     </Nav>
                     <Tab.Content id="slideInUp" className={isVisible ? 'animate__animated animate__slideInUp' : ''}>
                       <Tab.Pane eventKey="first">
-                        <Row className="justify-content-center">
+                        <Row>
                           {projectsTab1.map((project, index) => (
-                            <Col xs={12} md={6} lg={4} key={index} className="mb-4">
-                              <div className="project-img-container">
-                                <ProjectCard {...project} />
-                              </div>
-                            </Col>
+                            <ProjectCard key={index} {...project} />
                           ))}
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
-                        <Row className="justify-content-center">
+                        <Row>
                           {projectsTab2.map((project, index) => (
-                            <Col xs={12} md={6} lg={4} key={index} className="mb-4">
-                              <div className="project-img-container">
-                                <ProjectCard {...project} />
-                              </div>
-                            </Col>
+                            <ProjectCard key={index} {...project} />
                           ))}
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <Row className="justify-content-center">
+                        <Row>
                           {projectsTab3.map((project, index) => (
-                            <Col xs={12} md={6} lg={4} key={index} className="mb-4">
-                              <div className="project-img-container">
-                                <ProjectCard {...project} />
-                              </div>
-                            </Col>
+                            <ProjectCard key={index} {...project} />
                           ))}
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="fourth">
-                        <Row className="justify-content-center">
+                        <Row>
                           {projectsTab4.map((project, index) => (
-                            <Col xs={12} md={6} lg={4} key={index} className="mb-4">
-                              <div className="project-img-container">
-                                <ProjectCard {...project} />
-                              </div>
-                            </Col>
+                            <ProjectCard key={index} {...project} />
                           ))}
                         </Row>
                       </Tab.Pane>
